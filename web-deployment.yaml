@@ -1,0 +1,30 @@
+# web-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-web
+spec:
+  selector:
+    matchLabels:
+      app: employee-web
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: employee-web
+    spec:
+      containers:
+        - name: employee-web
+          image: 212131/nodedemoapplicationv1:2.0
+          ports:
+            - containerPort: 9000
+              name: "http"
+          env:
+            - name: POSTGRES_HOST
+              value: $(POSTGRES_SERVICE_SERVICE_HOST)
+            - name: POSTGRES_USER
+              value: postgres
+            - name: POSTGRES_PASSWORD
+              value: test
+            - name: POSTGRES_DB
+              value: employees
