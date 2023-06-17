@@ -20,7 +20,7 @@ Postgres database is used. Database is deployed in 1 pod.
 
 Deployment is done using Kubernets on AWS Cloud.
 
-### **Kubernet Components **
+### **Kubernet Components**
 * Cluster
 
 AWS Cluster is created using the command `eksctl create cluster --name DemoCluster --version 1.27 --region us-east-1 --nodegroup-name Linux-nodes --node-type t2.micro --nodes 2 --zones us-east-1a,us-east-1b,us-east-1c`
