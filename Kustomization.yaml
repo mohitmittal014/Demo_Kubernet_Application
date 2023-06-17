@@ -1,0 +1,10 @@
+# k8s/base/kustomization.yaml
+kind: Kustomization
+
+resources:
+  - db-persistent-volume.yaml
+  - db-persistent-volume-claim.yaml
+  - db-service.yaml
+  - db-deployment.yaml
+  - web-deployment.yaml
+  - web-service.yaml
