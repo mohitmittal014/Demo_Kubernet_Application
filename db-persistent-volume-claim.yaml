@@ -1,0 +1,13 @@
+# db-persistent-volume-claim.yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: employee-postgres-data-persisent-volume-claim
+spec:
+  volumeName: employee-postgres-data-persisent-volume
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
