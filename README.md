@@ -1,5 +1,5 @@
 # **Demo Kubernet Application**
-This repository contains demo application for the Kubernetes practice. This is two tier deployment. API tier contains node.js application which is pulled from Docker hub as Image `212131/nodedemoapplicationv1:2.0` and database tier contains postgres database using `postgres:latest` image from docker hub. Source code for node.js is also attached.
+This repository contains demo application for the Kubernetes practice. This is two tier deployment. API tier contains node.js application which is pulled from Docker hub as Image [212131/nodedemoapplicationv1:2.0](https://hub.docker.com/layers/212131/nodedemoapplicationv1/2.0/images/sha256:ffb9a5cf96b6a725e120454c81c70cb007388b8ab710798367b8f792c98fb493) and database tier contains postgres database using `postgres:latest` image from docker hub. Source code for node.js is also attached.
 
 ## **Overall Flow**
 
@@ -11,7 +11,7 @@ This is a two tier web api. Backend is postgres database:
 This is node js based application. For testing purpose only get api is created. In same way we can create another apis. 
 Data is read from postgres database.
 
-### **Database API**
+### **Database**
 Postgres database is used. Database is deployed in 1 pod.
 1. Database Name - Employees
 2. Table Name - Profile
